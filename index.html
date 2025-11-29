@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="manifest" href="manifest.json">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Smart Tank — Mobile App</title>
@@ -466,6 +467,11 @@ setInterval(async ()=>{ await fetchLatest(); }, 17000);
 /* ================== tiny startup log ================== */
 addLog('Ready. Firebase + ThingSpeak integrated (auto logic expected to run on ESP).');
 
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
 </script>
 </body>
 </html>
