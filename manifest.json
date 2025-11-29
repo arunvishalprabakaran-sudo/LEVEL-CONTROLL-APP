@@ -1,11 +1,13 @@
 {
   "name": "Level Controller",
   "short_name": "LevelCtrl",
+  "description": "A simple level controller app",
   "start_url": "./index.html",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#2196f3",
-  "description": "Level control app converted to APK",
+  "theme_color": "#1e88e5",
+
   "icons": [
     {
       "src": "icons/icon-192.png",
@@ -16,6 +18,21 @@
       "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "icons/screenshot1.png",
+      "sizes": "320x570",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "icons/screenshot2.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "wide"
     }
   ]
 }
